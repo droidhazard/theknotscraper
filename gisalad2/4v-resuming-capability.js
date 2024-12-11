@@ -2469,7 +2469,7 @@ const fs = require("fs");
     console.log("No checkpoint found. Starting fresh.");
   }
 
-  const browser = await chromium.launch({ headless: false }); // Launch browser in non-headless mode for debugging
+  const browser = await chromium.launch({ headless: true }); // Launch browser in non-headless mode for debugging
   const page = await browser.newPage();
 
   try {
